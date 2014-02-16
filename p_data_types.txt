@@ -1,12 +1,19 @@
 Python Data Types (lpthw Ex. 37)
+Not the same as 
+http://docs.python.org/2/library/datatypes.html
+See also:
+http://www.diveintopython3.net/native-datatypes.html
 --------------------------------
 Zed says: For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
 
 -----
-True, False - logic 
+True, False - logic; Booleans
 Example:
 >>> print a < b # tests whether a is less than b
 True # this is returned 
+Also:
+    if x:
+evaluates as True or False
 
 -----
 None - equivalent of null. It is an object.
@@ -47,5 +54,11 @@ http://docs.python.org/2/tutorial/floatingpoint.html
 -----
 lists - similar to arrays in other languages.
 Example: mylist = ['fur', 'tail', 'claws']
+(See also tuples, which are different.)
 
 -----
+See also:
+- sets
+- dictionaries
+- bytes and byte arrays (e.g. a JPG image file)
+

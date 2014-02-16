@@ -1,4 +1,5 @@
 Python Keywords (lpthw Ex. 37)
+These are ALL the keywords.
 ------------------------------
 
 and - Boolean, see also "or", "not"
