@@ -5,7 +5,7 @@
 
 # usual function
 def f(x): 
-	return x**2
+    return x**2
 
 print f(8)
 
