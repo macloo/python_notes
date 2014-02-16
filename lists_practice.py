@@ -36,7 +36,8 @@ for fruit in fruits:
 print
 print "There are now %d items in fruits.\n" % len(fruits)
 
-if "plums" in fruits:
-    print "We have plums!\n"
+x = raw_input("Type any fruit name: ")
+if x in fruits:
+    print "Yes, we do have %s!\n" % x
 else:
-    print "There are no plums!\n"
+    print "There are none of those here!\n"
