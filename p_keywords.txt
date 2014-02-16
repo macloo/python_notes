@@ -26,7 +26,7 @@ print rnd.randint(1, 10)
 elif - means "else if"; use with "if" statements
 
 global - use this keyword inside a function to change value of a variable OUTSIDE that function 
-Example: see lpthw/test_global.py (my file)
+Example: see tests/test_global.py (my file)
 
 or - Boolean, see also "and", "not"
 
@@ -44,30 +44,31 @@ Example: assert 5 > 10 # this will throw an error (AssertionError)
 If it's True, nothing happens. 
 http://stackoverflow.com/questions/5142418/what-is-the-use-of-assert-in-python 
 
-else - the final line in an "if" statement (every "if" statement should have one)
+else - the final line in an "if" statement (every "if" statement should have one, says Zed, but others say no to that)
 
 if - testing for True or False, causing something to happen based on the result; can be followed by many lines of "elif" (see herein); ends with a single "else"
 Tips: See http://learnpythonthehardway.org/book/ex36.html
 
 pass - for controlling loops; in a loop, "pass" does nothing; program just goes to next thing. Nothing is skipped. (Typically used as a placeholder when you're building a new system of classes.) 
-See lpthw/pass_continue.py (my file) (see also "continue") 
+See tests/pass_continue.py (my file) (see also "continue") 
 
 yield - used like "return", except the function will return a generator. What is a generator? It's similar to a list, but it's temporary. A clear explanation is here: 
 http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained
 
 break - for controlling loops; stops the loop immediately and goes back out to the main program, outside the loop (nothing after "break" will execute in that loop; the loop is canceled)
-Example: see lpthw/modulo.py (my file) - line 25 
-See also lpthw/pass_continue.py (my file) 
+Example: see modulo_test.py (my file) - line 37
+See also tests/pass_continue.py (my file) 
 
 import - open an outside module (file) into the current one; see also "from"
 Example: from sys import argv (Ex. 15)
 
 print - write what follows this, onscreen 
-Example: print "hello"
+Example: print "hello" 
+In Python 3: print("hello")
 
 class - used to create objects in Python. 
 The simplest form of class definition looks like this:
-class ClassName:
+class ClassName(object):
     <statement-1>
     .
     .
@@ -84,13 +85,13 @@ Example 1: for var in list:
 Example 2: for x in range(1, 11): 
 
 is - keyword tests object identity; should NOT be used to test for string equality. It compares the memory address a object resides in. 
-See lpthw/test_is.py (my file)
+See tests/test_is.py (my file)
 
 continue  - for controlling loops; "returns the control to the beginning of the loop." It doesn't do the following things - it goes back to the top of the loop.
-See lpthw/pass_continue.py (my file) (see also "pass")
+See tests/pass_continue.py (my file) (see also "pass")
 
-return - use to get values out of a function 
-Example: see lpthw/learnpython_ex21_sup.py (my file)
+return - use it to get values out of a function 
+Example: see tests/test_returns.py (my file)
 
 def - declares a function
 Example: def functionname(var):  
@@ -99,11 +100,11 @@ for - a type of loop
 Example 1: for var in list: 
 Example 2: for x in range(1, 11): 
 Note: to start at 0, you can use (0, x) or simply (x) - parens needed
-See also lpthw/enumerate_example.py (my file) 
+See also tests/enumerate_example.py (my file) 
 
 lambda - used to create an anonymous function (a function with no name); must be on one line 
 Example: f = lambda x: x**2 + 2*x - 5
-See lpthw/lambda_example.py (my file) 
+See tests/lambda_example.py (my file) 
 
 try - used for error handling; similar to "if" statement, ends with "else", but instead of "elif" the keyword for all instructions in between is "except" (see also "except") 
 http://docs.python.org/2/tutorial/errors.html#handling-exceptions 
