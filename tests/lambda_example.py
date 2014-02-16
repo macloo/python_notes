@@ -1,7 +1,9 @@
-# the difference between a normal function definition ("f") and 
-# a lambda function ("g") 
+# compare use of lambda to make an anonymous function
+# shows the difference between a normal function definition ("f")
+# and a lambda function ("g") 
 # http://www.secnetix.de/~olli/Python/lambda_functions.hawk
-# http://stackoverflow.com/questions/890128/python-lambda-why  
+# http://stackoverflow.com/questions/890128/python-lambda-why
+
 
 # usual function
 def f(x): 
@@ -9,8 +11,10 @@ def f(x):
 
 print f(8)
 
-# compare use of lambda to make an anonymous function
-g = lambda x: x**2 # it will return this - don't use "return" keyword
+# lambda version of same 
+g = lambda x: x**2 
+
+# it will return x**2 - do NOT use "return" keyword
 # must fit all on one line 
 
 print g(8)
