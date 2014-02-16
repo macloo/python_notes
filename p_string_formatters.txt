@@ -1,0 +1,59 @@
+String formats
+LPTHW ex. 37
+see format_strings.py (my file)
+-------------------------------
+
+%d - integer, whole number, no decimals (Signed integer decimal)
+%i - seems same as d to me (Signed integer decimal)
+%o - seems same as d to me (Signed octal value)
+%u - "Obsolete type – it is identical to 'd'."
+
+%x - "Signed hexadecimal (lowercase)"
+     a = 15
+     print "%d is %x in hexadecimal." % (a, a)
+     15 is f in hexadecimal.
+%X - "Signed hexadecimal (uppercase)"
+     print "%d is %X in hexadecimal." % (a, a)
+     15 is F in hexadecimal.
+
+%e - Floating point exponential format (lowercase).
+     b = 100000
+     print "%d is %e in exponential format." % (b, b)
+     100000 is 1.000000e+05 in exponential format.
+%E - Floating point exponential format (uppercase).
+     print "%d is %E in exponential format." % (b, b)
+     100000 is 1.000000E+05 in exponential format.
+
+%f - Floating point decimal format
+     print "Pi is %f in floating point decimal format." % math.pi
+     Pi is 3.141593 in floating point decimal format.
+%F - Floating point decimal format
+     print "Pi is %F in floating point decimal format." % math.pi
+     Pi is 3.141593 in floating point decimal format.
+
+%g - Floating point format. Uses lowercase exponential format if exponent 
+     is less than -4 or not less than precision, decimal format otherwise.
+     print "Pi is %g ..." % math.pi
+     Pi is 3.14159 ...
+%G - Same as above.
+
+%c - Single character (accepts integer or single character string)
+     x = 5
+     y = "a"
+     print "x is %c and y is %c." % (x, y)
+     x is  and y is a. (??? blank space for 5?)
+
+%r - String (converts any Python object using repr()).
+     Will show quotes around string values.
+%s - String (converts any Python object using str()).
+     No quotes around string values. Error if not string.
+
+%% - No argument is converted, results in a '%' character in the result.
+     >>> print "x is %% and y is %%." % (x, y)
+     Traceback (most recent call last):
+       File "<stdin>", line 1, in <module>
+     TypeError: not all arguments converted during string formatting
+     >>> 
+
+
+http://docs.python.org/2/library/stdtypes.html#string-formatting-operations

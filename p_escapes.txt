@@ -1,0 +1,19 @@
+String escape sequences
+LPTHW ex. 37
+-------------------------
+
+\\ - print one backslash - \
+\' - print an apostrophe or single quote - ' (use inside double quotes)
+\" - print a double quote - " (use inside single quotes)
+\a - ASCII Bell (BEL)
+\b - ASCII Backspace (BS)
+\f - ASCII Formfeed (FF)
+\n - newline - adds a blank line
+\r - ASCII Carriage Return (CR)
+\t - adds a tab 
+\v - ASCII Vertical Tab (VT)
+
+-------------------------
+See under 2.4.1. String literals:
+http://docs.python.org/2/reference/lexical_analysis.html
+

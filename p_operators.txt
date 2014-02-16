@@ -1,0 +1,40 @@
+Operators - LPTHW ex. 37
+------------------------
+
++	add
+-	subtract
+*	multiply
+**	exponent, e.g. 10**20 is 10 to the 20th power
+/	divide
+//	deletes numbers after decimal, e.g. 9.0 // 2.0 = 4.0 whereas 
+    9.0 / 2.0 = 4.5
+%	modulus; get remainder from division
+<	less than
+>	greater than
+<=	less than or equal to
+>=	greater than or equal to
+==	equivalence, e.g. if x == 10: 
+!=	not equal to, e.g. if x != 10:
+<>	seems to be same as != 
+( )	parens, for math, for tuples
+[ ]	square brackets, for lists
+{ }	curly braces, for dictionaries
+@	at sign - used in "decorators":
+	https://wiki.python.org/moin/PythonDecoratorLibrary
+,	comma; use between things in a list
+:	colon; use at end of lines starting with def, if, while, etc.
+.	decimal point
+=	equals; use to assign a value
+;	semicolon (for what?)
++=	increment
+-=	decrement
+*=	c *= a is equivalent to c = c * a
+/=	c /= a is equivalent to c = c / a
+//=	probably same as above, below
+%=	c %= a is equivalent to c = c % a
+**=	c **= a is equivalent to c = c ** a
+
+------------------------
+http://www.tutorialspoint.com/python/python_basic_operators.htm
+http://pymotw.com/2/operator/
+
