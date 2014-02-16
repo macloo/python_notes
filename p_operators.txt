@@ -7,7 +7,7 @@ Operators - LPTHW ex. 37
 **	exponent, e.g. 10**20 is 10 to the 20th power
 /	divide
 //	deletes numbers after decimal, e.g. 9.0 // 2.0 = 4.0 whereas 
-    9.0 / 2.0 = 4.5
+	9.0 / 2.0 = 4.5
 %	modulus; get remainder from division
 <	less than
 >	greater than
