@@ -77,7 +77,7 @@ def setbomb():
     print "00:00:30"
     print "You'd better figure out how to defuse the bomb!"
     print "There are wires of many different colors. You can cut them."
-"""
+    
     while bomb_armed:
         solve = raw_input("Which color do you want to try? ")
         if solve == wire:
@@ -85,7 +85,6 @@ def setbomb():
             bomb_armed = False
         else:
             bomb_armed = announce(basetime)
-"""
 
 def announce(bt):
     nowtime = time.time()
