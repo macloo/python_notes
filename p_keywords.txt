@@ -106,7 +106,8 @@ lambda - used to create an anonymous function (a function with no name); must be
 Example: f = lambda x: x**2 + 2*x - 5
 See tests/lambda_example.py (my file) 
 
-try - used for error handling; similar to "if" statement, ends with "else", but instead of "elif" the keyword for all instructions in between is "except" (see also "except") 
+try - used for error handling; similar to "if" statement, ends with "else", but instead of "elif" the keyword for all instructions in between is "except" (see also "except")
+See tests/modulo_test.py (my file) 
 http://docs.python.org/2/tutorial/errors.html#handling-exceptions 
 
 except - used for error handling with "try" (see also "try")
