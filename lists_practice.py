@@ -35,3 +35,8 @@ for fruit in fruits:
 
 print
 print "There are now %d items in fruits.\n" % len(fruits)
+
+if "plums" in fruits:
+    print "We have plums!\n"
+else:
+    print "There are no plums!\n"
