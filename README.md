@@ -29,11 +29,11 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Demo showing how modulo (modulus) works: Test a number to see if it is prime.
 
-* p_data_types.txt
-* p_escapes.txt
-* p_keywords.txt
-* p_operators.txt
-* p_string_formatters.txt
+* p_data_types.txt 
+* p_escapes.txt 
+* p_keywords.txt 
+* p_operators.txt 
+* p_string_formatters.txt 
 
   My notes about these, following LPTHW ex. 37.
 
