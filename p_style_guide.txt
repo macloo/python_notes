@@ -1,0 +1,138 @@
+PEP 8 -- Style Guide for Python Code
+http://www.python.org/dev/peps/pep-0008/
+
+In Zed's exercise 44, he instructs us to read this. It is long.
+I have made some notes here. 
+
+-------------------------------------------------------------------------------
+INDENTS
+"Use 4 spaces per indentation level."
+"Python 3 disallows mixing the use of tabs and spaces for indentation."
+"Python 2 code indented with a mixture of tabs and spaces should be converted to using spaces exclusively."
+
+-------------------------------------------------------------------------------
+LINE LENGTH
+"Limit all lines to a maximum of 79 characters."
+
+"For flowing long blocks of text with fewer structural restrictions (docstrings or comments), the line length should be limited to 72 characters."
+
+"Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in preference to using a backslash for line continuation."
+
+-------------------------------------------------------------------------------
+BLANK LINES
+"Separate top-level function and class definitions with two blank lines."
+
+-------------------------------------------------------------------------------
+IMPORT
+"Imports should usually be on separate lines, e.g.:"
+
+"Yes:" import os
+       import sys
+
+"No:"  import sys, os
+
+"Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants."
+
+"Wildcard imports (from <module> import *) should be avoided, as they make it unclear which names are present in the namespace, confusing both readers and many automated tools."
+
+-------------------------------------------------------------------------------
+WHITESPACE
+"Avoid extraneous whitespace ..."
+
+"No:"  spam( ham[ 1 ], { eggs: 2 } )
+
+Yay:
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not)."
+
+Other "yes" examples:
+
+i = i + 1
+submitted += 1
+x = x*2 - 1
+hypot2 = x*x + y*y
+c = (a+b) * (a-b)
+
+-------------------------------------------------------------------------------
+CRUNCHING STUFF TOGETHER ON ONE LINE - don't do it
+
+"Yes:"
+
+if foo == 'blah':
+    do_blah_thing()
+do_one()
+do_two()
+do_three()
+
+"Rather not:"
+
+if foo == 'blah': do_blah_thing()
+do_one(); do_two(); do_three()
+
+"Definitely not:"
+
+if foo == 'blah': do_blah_thing()
+else: do_non_blah_thing()
+
+try: something()
+finally: cleanup()
+
+-------------------------------------------------------------------------------
+COMMENTS
+
+"Use inline comments sparingly.
+
+"An inline comment is a comment on the same line as a statement. Inline comments should be separated by at least two spaces from the statement. They should start with a # and a single space.
+
+"Inline comments are unnecessary and in fact distracting if they state the obvious."
+
+-------------------------------------------------------------------------------
+DOCSTRINGS
+(text enclosed by triple quotes)
+
+"Write docstrings for all public modules, functions, classes, and methods. Docstrings are not necessary for non-public methods, but you should have a comment that describes what the method does. This comment should appear after the def line."
+
+"... the """ that ends a multiline docstring should be on a line by itself, and preferably preceded by a blank line."
+
+-------------------------------------------------------------------------------
+NAMING CONVENTIONS
+
+"Function names should be lowercase, with words separated by underscores as necessary to improve readability."
+
+"__double_leading_and_trailing_underscore__: "magic" objects or attributes that live in user-controlled namespaces. E.g. __init__, __import__ or __file__. Never invent such names; only use them as documented."
+
+"Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability. Python packages should also have short, all-lowercase names, although the use of underscores is discouraged."
+
+"Class names should normally use the CapWords convention."
+"CapitalizedWords (or CapWords, or CamelCase -- so named because of the bumpy look of its letters [3]). This is also sometimes known as StudlyCaps."
+
+Exception Names
+"Because exceptions should be classes, the class naming convention applies here. However, you should use the suffix "Error" on your exception names (if the exception actually is an error)."
+
+Designing for inheritance
+"Always decide whether a class's methods and instance variables (collectively: "attributes") should be public or non-public. If in doubt, choose non-public; it's easier to make it public later than to make a public attribute non-public."
+
+Following is a lot of stuff about public and non-public which I don't understand yet.
+
+-------------------------------------------------------------------------------
+PROGRAMMING RECOMMENDATIONS
+
+"Comparisons to singletons like None should always be done with is or is not, never the equality operators."
+
+"Also, beware of writing if x when you really mean if x is not None -- e.g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context!"
+
+''.startswith() and ''.endswith()
+"Use string methods instead of the string module.
+
+"String methods are always much faster and share the same API with unicode strings. Override this rule if backward compatibility with Pythons older than 2.0 is required.
+
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes.
+
+"startswith() and endswith() are cleaner and less error prone." 
+
+if foo.startswith('bar'): 
+
+Boolean value comparisons:
+Yes:   if greeting:
+No:    if greeting == True:
+
+-------------------------------------------------------------------------------

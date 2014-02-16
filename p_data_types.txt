@@ -1,0 +1,51 @@
+Python Data Types (lpthw Ex. 37)
+--------------------------------
+Zed says: For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
+
+-----
+True, False - logic 
+Example:
+>>> print a < b # tests whether a is less than b
+True # this is returned 
+
+-----
+None - equivalent of null. It is an object.
+Example: 
+database_connection = None 
+[here: stuff to connect to database] 
+if database_connection is None:
+	print 'The database could not connect'
+http://www.pythoncentral.io/python-null-equivalent-none/ 
+"There are two ways to check if a variable is None. One way can be performed by using the 'is' keyword. Another is using the == syntax. Both comparison methods are different"
+
+-----
+strings - "There are seven sequence types: strings, Unicode strings, lists, tuples, bytearrays, buffers, and xrange objects. ... String literals are written in single or double quotes"
+Navigate inside a string (examples):
+a = 'hello, world'
+print a[0]
+print a[1:5]
+print a[:7] + 'Python'
+
+-----
+numbers - "There are four distinct numeric types: plain integers, long integers, floating point numbers, and complex numbers. ... Long integers have unlimited precision. ... Complex numbers have a real and imaginary part, which are each a floating point number."
+"The constructors int(), long(), float(), and complex() can be used to produce numbers of a specific type."
+http://docs.python.org/2/library/stdtypes.html
+
+-----
+Testing for numbers: Say you have raw_input (always a string) and you need to find out whether it is fully numeric or not (e.g. "blip123" is not numeric). Way to do it: 
+a = raw_input
+a.isdigit()  # will return True or False 
+Then to CONVERT a string to a number:
+int(a) 
+
+-----
+floats - inexactness in mathematical work because of the way numbers are represented. 
+1/4 = 0 (integer)
+1/4.0 = 0.25 (float)
+http://docs.python.org/2/tutorial/floatingpoint.html
+
+-----
+lists - similar to arrays in other languages.
+Example: mylist = ['fur', 'tail', 'claws']
+
+-----
