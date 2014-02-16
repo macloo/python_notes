@@ -5,6 +5,8 @@ In trying to learn Python, I have used several resources. I have produced a lot 
 
 In this repo, I am saving my files to which I expect to return, for reference.
 
+The tests/ directory contains trivial small files, referenced in some of my notes.
+
 ## The Files
 
 * alien_while_loop.py
