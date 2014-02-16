@@ -49,3 +49,7 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Learning to use Python's turtle module.
 
+* useful_modules.py
+
+  Tests with copy, random, time, pickle (for saving binary data out, as from a game, and then reading it back in).
+
