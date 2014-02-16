@@ -7,5 +7,5 @@ shuttles = ['Columbia', 'Endeavour', 'Challenger', 'Discovery', 'Atlantis',
 
 # read shuttles list and enumerate it into index and value 
 for index, value in enumerate(shuttles):
-	print index, value
+    print index, value
 
