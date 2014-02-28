@@ -29,18 +29,6 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Demo showing how modulo (modulus) works: Test a number to see if it is prime.
 
-* p_data_types.txt 
-* p_escapes.txt 
-* p_keywords.txt 
-* p_operators.txt 
-* p_string_formatters.txt 
-
-  My notes about these, following LPTHW ex. 37.
-
-* p_style_guide.txt
-
-  My notes about Python style (from PEP 8).
-
 * print_python_keywords.py
 
   Short program that prints all Python keywords.
@@ -52,4 +40,22 @@ The tests/ directory contains trivial small files, referenced in some of my note
 * useful_modules.py
 
   Tests with copy, random, time, pickle (for saving binary data out, as from a game, and then reading it back in).
+
+## Files in /tests
+
+Very trivial small files to show me how something is done.
+
+## Files in /texts
+
+* p_data_types.txt 
+* p_escapes.txt 
+* p_keywords.txt 
+* p_operators.txt 
+* p_string_formatters.txt 
+
+  My notes about these, following LPTHW ex. 37.
+
+* p_style_guide.txt
+
+  My notes about Python style (from PEP 8).
 
