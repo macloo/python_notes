@@ -52,8 +52,12 @@ Very trivial small files to show me how something is done.
 * p_keywords.txt 
 * p_operators.txt 
 * p_string_formatters.txt 
+  
+  
   My notes about these, following LPTHW ex. 37.
 
 * p_style_guide.txt
+  
+  
   My notes about Python style (from PEP 8).
 
