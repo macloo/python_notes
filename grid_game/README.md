@@ -7,7 +7,7 @@ The game is coded in Python 3.x, but I didn't have much trouble changing it to w
 
 ## Things I learned from the tutorial
 
-* How to make a menu so the player can choose things, like "Start a new game." This was not complex at all, but I had not done it before, so it was a nice way to start out with this tutorial.
+* How to make a menu so the player can choose things, like "Start a new game." This was not complex at all, but I had not done it before, so it was a nice way to start out with this tutorial. The menu_choice() function is sort of like a switch-statement.
 
 * How to make a grid and redraw it every time the player moves.
 
@@ -15,4 +15,5 @@ The game is coded in Python 3.x, but I didn't have much trouble changing it to w
 
 * How to move a player on a grid with keystrokes; also, how to test whether the player's attempted move would take the character off the grid, and prevent that happening. This was very good to learn.
 
-* Recursion: Our tutor is using recursive functions, where I think I would have tried to use a while-loop instead. But it's interesting to see how the resursion is actually safe to use in these cases.
+* Recursion: Our tutor is using recursive functions, where I think I would have tried to use a while-loop instead. But it's interesting to see how the [recursion](http://interactivepython.org/courselib/static/pythonds/Recursion/recursionsimple.html) is actually safe to use in these cases.
+
