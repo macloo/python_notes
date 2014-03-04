@@ -7,10 +7,12 @@ from random import randint
 
 
 class Main():
-"""
-In fact there's no need to write this as a class, because there is only one 
-class in the entire program. However, this is how it was done in the tutorial.
-"""
+	"""
+	In fact there's no need to write this as a class, because there is only 
+	one class in the entire program. However, this is how it was done in 
+	the tutorial.
+	"""
+	
 	max_width = 5
 	max_height = 5
 	character_alive = True
