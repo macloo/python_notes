@@ -43,21 +43,22 @@ class Main():
 		self.character_position = [0, 0]
 
 	def place_monster(self):
-		self.monster_position = [randint(0, 4), randint(0, 4)]
-		# ideally -
-		# [randint(0, max_width - 1), randint(0, max_height - 1)]
+		self.monster_position = [randint(0, self.max_width - 1), \
+		randint(0, self.max_height - 1)]
 		for i in ['character', 'trap', 'flask']:
 			if (self.coordinate_collisions('monster', i)):
 				self.place_monster() # do over
 
 	def place_trap(self):
-		self.trap_position = [randint(0, 4), randint(0, 4)]
+		self.trap_position = [randint(0, self.max_width - 1), \
+		randint(0, self.max_height - 1)]
 		for i in ['character', 'monster', 'flask']:
 			if (self.coordinate_collisions('trap', i)):
 				self.place_trap()
 
 	def place_flask(self):
-		self.flask_position = [randint(0, 4), randint(0, 4)]
+		self.flask_position = [randint(0, self.max_width - 1), \
+		randint(0, self.max_height - 1)]
 		for i in ['character', 'trap', 'monster']:
 			if (self.coordinate_collisions('flask', i)):
 				self.place_flask()
@@ -118,6 +119,37 @@ class Main():
 		self.place_flask()
 		self.draw_grid()
 
+	def create_setup(self):
+	# 3 settings can be determined by player
+		self.reset_all_settings()
+		print "You can now choose the settings."
+		
+		print "How wide do you want the game board to be?",
+		width_choice = raw_input("(Default: 5) ")
+		try:
+			width_choice = int(width_choice)
+		except ValueError:
+			width_choice = 5
+		self.max_width = width_choice
+		
+		print "How high do you want the game board to be?",
+		height_choice = raw_input("(Default: 5) ")
+		try:
+			height_choice = int(height_choice)
+		except ValueError:
+			height_choice = 5
+		self.max_height = height_choice
+
+		print "How many moves should the monster get for each of your moves?",
+		monster_move_choice = raw_input("(Default: 2) ")
+		try:
+			monster_move_choice = int(monster_move_choice)
+		except ValueError:
+			monster_move_choice = 2
+		self.monster_move_per_turn = monster_move_choice
+
+		self.setup_game()
+
 	def menu_choice(self, choice):
 	# respond to the player's menu choice
 		try:
@@ -132,7 +164,7 @@ class Main():
 		elif (choice == 3):
 			pass
 		elif (choice == 4):
-			pass
+			self.create_setup()
 		elif (choice == 5):
 			print "Goodbye!\n"
 			exit()
@@ -200,7 +232,8 @@ class Main():
 			return False
 
 	def move_monster(self):
-		moves_left = self.monster_move_per_turn # moves remaining
+		moves_left = self.monster_move_per_turn
+		# monster moves per 1 player move: set during game setup
 		while (moves_left > 0):
 			mon_x = self.monster_position[0]
 			mon_y = self.monster_position[1]
@@ -216,18 +249,18 @@ class Main():
 					self.monster_position = [mon_x, mon_y - 1] # go up
 				else:
 					self.monster_position = [mon_x, mon_y + 1] # go down
-			moves_left -= 1 # monster's moves are limited
+			moves_left -= 1
 
 	def draw_grid(self):
 		if (self.character_won):
-			print "You have beaten the monster! Hooray!\n"
+			print "\nYou have beaten the monster! Hooray!\n"
 			choice = raw_input("Press any key to return to the menu or \
 Return/Enter to exit.")
 			if (choice):
 				self.display_menu()
 
 		elif (not self.character_alive):
-			print "You have been eaten by the monster! Boo!\n"
+			print "\nYou have been eaten by the monster! Boo!\n"
 			choice = raw_input("Press any key to return to the menu or \
 Return/Enter to exit.")
 			if (choice):
@@ -246,9 +279,11 @@ Return/Enter to exit.")
 					elif (self.character_position[0] == x and \
 					self.character_position[1] == y):
 						myrow.append('P')
+					# -- trap is not visible --
 					#elif (self.trap_position[0] == x and \
 					#self.trap_position[1] == y):
 					#	myrow.append('T')
+					# -- flask is not visible --
 					#elif (self.flask_position[0] == x and \
 					#self.flask_position[1] == y):
 					#	myrow.append('F')
