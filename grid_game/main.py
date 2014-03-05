@@ -199,6 +199,25 @@ class Main():
 		else:
 			return False
 
+	def move_monster(self):
+		moves_left = self.monster_move_per_turn # moves remaining
+		while (moves_left > 0):
+			mon_x = self.monster_position[0]
+			mon_y = self.monster_position[1]
+			char_x = self.character_position[0]
+			char_y = self.character_position[1]
+			if (char_x - mon_x != 0): # if not both in same column
+				if (char_x - mon_x < 0): # if monster is to right of char
+					self.monster_position = [mon_x - 1, mon_y] # go left
+				else:
+					self.monster_position = [mon_x + 1, mon_y] # go right
+			else:
+				if (char_y - mon_y < 0): # if monster is below char
+					self.monster_position = [mon_x, mon_y - 1] # go up
+				else:
+					self.monster_position = [mon_x, mon_y + 1] # go down
+			moves_left -= 1 # monster's moves are limited
+
 	def draw_grid(self):
 		if (self.character_won):
 			print "You have beaten the monster! Hooray!\n"
@@ -227,12 +246,12 @@ Return/Enter to exit.")
 					elif (self.character_position[0] == x and \
 					self.character_position[1] == y):
 						myrow.append('P')
-					elif (self.trap_position[0] == x and \
-					self.trap_position[1] == y):
-						myrow.append('T')
-					elif (self.flask_position[0] == x and \
-					self.flask_position[1] == y):
-						myrow.append('F')
+					#elif (self.trap_position[0] == x and \
+					#self.trap_position[1] == y):
+					#	myrow.append('T')
+					#elif (self.flask_position[0] == x and \
+					#self.flask_position[1] == y):
+					#	myrow.append('F')
 					else:
 						myrow.append('?')
 				print ''.join(myrow)
