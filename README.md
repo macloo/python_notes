@@ -33,6 +33,11 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Short program that prints all Python keywords.
 
+* string_searches.py
+
+  Run various tests on a string to find out whether it would be okay 
+  to use it as a filename.
+
 * turtle_tests.py
 
   Learning to use Python's turtle module.
