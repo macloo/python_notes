@@ -1,6 +1,7 @@
 # test writing to, from file, from book: lp5e pp. 288-290
 # data all becomes strings when we write to file
 # NOTE use of eval() to reconstitute objects
+# NOTE: normally we use pickle module instead of this method
 
 X, Y, Z = 43, 44, 45
 S = 'Spam'
