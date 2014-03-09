@@ -46,6 +46,11 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Tests with copy, random, time, pickle (for saving binary data out, as from a game, and then reading it back in).
 
+* write_read_file.py
+
+  Writing non-text data into a file as text and (awesomely) reconstituting 
+  the data back into Python objects as you read it out of the text file.
+
 ## Files in /tests
 
 Very trivial small files to show me how something is done.
