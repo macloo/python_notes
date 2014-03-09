@@ -27,7 +27,7 @@ def check_filename(filename):
     elif (filename[-4:] != '.txt'):
         print "Your filename must end with .txt"
     elif (not filename[0].isalpha()):
-	    print "A filename must begin with a letter."
+        print "A filename must begin with a letter."
     elif (badchar != None):
         print "Use only alphanumeric characters in filenames."
         print "%s is not acceptable." % badchar
