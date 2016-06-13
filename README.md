@@ -48,6 +48,10 @@ The tests/ directory contains trivial small files, referenced in some of my note
   Run various tests on a string to find out whether it would be okay
   to use it as a filename.
 
+* tuples.py
+
+  Examples of tuples. Unlike a list, a tuple is immutable.
+
 * turtle_tests.py
 
   Learning to use Python's turtle module.
