@@ -33,9 +33,13 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Short program that prints all Python keywords.
 
+* read_write_easy.py
+
+  Very basic read and write for files: `open()`, `read()`, `write()`, `close()`.
+
 * string_searches.py
 
-  Run various tests on a string to find out whether it would be okay 
+  Run various tests on a string to find out whether it would be okay
   to use it as a filename.
 
 * turtle_tests.py
@@ -46,9 +50,13 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Tests with copy, random, time, pickle (for saving binary data out, as from a game, and then reading it back in).
 
+* wrapping_02_notes.py
+
+  Examples based on a Python intro. Using for-loops to get keys, values from a dictionary is useful. Good for a fast review of basics. Also `if x in y:`
+
 * write_read_file.py
 
-  Writing non-text data into a file as text and (awesomely) reconstituting 
+  Writing non-text data into a file as text and (awesomely) reconstituting
   the data back into Python objects as you read it out of the text file.
 
 ## Files in /tests
@@ -57,17 +65,18 @@ Very trivial small files to show me how something is done.
 
 ## Files in /texts
 
-* p_data_types.txt 
-* p_escapes.txt 
-* p_keywords.txt 
-* p_operators.txt 
-* p_string_formatters.txt 
-  
-  
+* firstamendment.txt - dummy text file
+
+* p_data_types.txt
+* p_escapes.txt
+* p_keywords.txt
+* p_operators.txt
+* p_string_formatters.txt
+
+
   My notes about these, following LPTHW ex. 37.
 
 * p_style_guide.txt
-  
-  
-  My notes about Python style (from PEP 8).
 
+
+  My notes about Python style (from PEP 8).
