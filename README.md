@@ -37,6 +37,12 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Very basic read and write for files: `open()`, `read()`, `write()`, `close()`.
 
+* split_string_make_dict.py
+
+  Split a string on a char (e.g. ",") to make a list. If the resulting list
+  items are splittable pairs, you can use a for-loop to build a dictionary
+  from the list.
+
 * string_searches.py
 
   Run various tests on a string to find out whether it would be okay
