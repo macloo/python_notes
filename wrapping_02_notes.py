@@ -36,11 +36,11 @@ print mylist
 print len(mylist)
 
 #dictionaries - note that order is not fixed - unlike lists
-prices = {thing1:500.00, thing2:225.00, thing3:42.75}
+prices = { thing1:500.00, thing2:225.00, thing3:42.75 }
 print prices
 print len(prices)
 
-print thing4,
+print thing4
 print len(thing4)
 
 # accessing values in a dict: use the name (name:value) not index
