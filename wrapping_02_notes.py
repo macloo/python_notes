@@ -66,24 +66,28 @@ print "You're dead."
 
 # for-loops
 print "\nfor-loop with list:"
+
 mylist = [thing1, thing2, thing3, thing4]
 for thing in mylist:
 	print thing
 
 # with a dict - handy!
 print "\nfor-loops with dict:\n(1)"
+
 for key,value in prices.items():
 	print key + " $" + str(value)
 
 print "\n(2)"
+
 for k in prices.keys():
 	print k
 
 print "\n(3)"
+
 for v in prices.values():
 	print v
 
 # read/write files:
 # "There is no difference between r and rt or w and wt since text mode is the default."
 # http://stackoverflow.com/questions/23051062/open-files-in-rt-and-wt-modes
-# see my file - read_write_easy.py 
+# see my file - read_write_easy.py
