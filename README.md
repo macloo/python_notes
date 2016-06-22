@@ -21,6 +21,10 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   Demo of how using a different formatter produces different output.
 
+* lambda_and_map.py
+
+  How to use lambda (Python's anonymous function construct) and `map()`, a built-in function that's kind of like a for-loop in that it runs a function on each item in a list or a range. Handy!
+
 * lists_practice.py
 
   Things we can do with lists.
@@ -28,6 +32,10 @@ The tests/ directory contains trivial small files, referenced in some of my note
 * modulo_test.py
 
   Demo showing how modulo (modulus) works: Test a number to see if it is prime.
+
+* options_for_function_args.py
+
+  These options can make the arguments more flexible. One option is to set a default value. Another is to say the number of arguments might vary.
 
 * print_python_keywords.py
 
