@@ -83,16 +83,16 @@ Very trivial small files to show me how something is done.
 
 ## Files in /texts
 
-* [firstamendment.txt](firstamendment.txt) - dummy text file
+* [firstamendment.txt](texts/firstamendment.txt) - dummy text file
 
-* [p_data_types.txt](p_data_types.txt)
-* [p_escapes.txt](p_escapes.txt)
-* [p_keywords.txt](p_keywords.txt)
-* [p_operators.txt](p_operators.txt)
-* [p_string_formatters.txt](p_string_formatters.txt)
+* [p_data_types.txt](texts/p_data_types.txt)
+* [p_escapes.txt](texts/p_escapes.txt)
+* [p_keywords.txt](texts/p_keywords.txt)
+* [p_operators.txt](texts/p_operators.txt)
+* [p_string_formatters.txt](texts/p_string_formatters.txt)
 
   My notes about these, following LPTHW ex. 37.
 
-* [p_style_guide.txt](p_style_guide.txt)
+* [p_style_guide.txt](texts/p_style_guide.txt)
 
   My notes about Python style (from PEP 8).
