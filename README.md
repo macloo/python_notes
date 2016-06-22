@@ -9,7 +9,7 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
 ## The Files
 
-* alien_while_loop.py
+* [alien_while_loop.py](alien_while_loop.py)
 
   Use of random number to make a simple fight scene; if-elif-else; while-loop
 
