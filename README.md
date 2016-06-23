@@ -17,6 +17,10 @@ The tests/ directory contains trivial small files, referenced in some of my note
 
   10 useful built-in functions, used in examples.
 
+* [classes_objects.py](classes_objects.py)
+
+  Demo of how to create classes, with their attributes and internal functions. How the functions are called. How to pass one class into another class — in this case, making all "customers" also "people."
+
 * [format_strings.py](format_strings.py)
 
   Demo of how using a different formatter produces different output.
