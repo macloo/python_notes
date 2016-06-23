@@ -60,6 +60,10 @@ The tests/ directory contains trivial small files, referenced in some of my note
   Run various tests on a string to find out whether it would be okay
   to use it as a filename.
 
+* [try_except.py](try_except.py)
+
+  Some simple examples of error handling. Students sometimes want to use an if-statement instead, but this is better because you can catch specific types of errors. Also, use of `finally:`
+
 * [tuples.py](tuples.py)
 
   Examples of tuples. Unlike a list, a tuple is immutable.
